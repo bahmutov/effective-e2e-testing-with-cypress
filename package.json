@@ -1,0 +1,23 @@
+{
+  "name": "effective-e2e-testing-with-cypress",
+  "version": "1.0.0",
+  "description": "Test project showing Cypress in action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/effective-e2e-testing-with-cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahmutov/effective-e2e-testing-with-cypress/issues"
+  },
+  "homepage": "https://github.com/bahmutov/effective-e2e-testing-with-cypress#readme",
+  "devDependencies": {
+    "cypress": "^0.20.0"
+  }
+}
