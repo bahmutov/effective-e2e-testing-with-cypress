@@ -1,6 +1,6 @@
 // common frameworks
-const url = 'http://todomvc.com/examples/angularjs'
-// const url = 'http://todomvc.com/examples/angular2/'
+// const url = 'http://todomvc.com/examples/angularjs'
+const url = 'http://todomvc.com/examples/angular2/'
 
 // Vue and Polymer uses different CSS names
 // .new-todo instead of #new-todo
@@ -14,7 +14,7 @@ it('opens todo app', () => {
 
 it('is focused on new item', () => {
   cy.visit(url)
-  cy.focused().should('have.id', 'new-todo')
+  cy.focused().should('have.class', 'new-todo')
 })
 
 context('New Todo', () => {
@@ -25,8 +25,8 @@ context('New Todo', () => {
   const firstTodo = 'Learn Cypress'
 
   it('adds 1 todo', () => {
-    cy.get('#new-todo').type(firstTodo).type('{enter}')
-    cy.get('#todo-list li')
+    cy.get('.new-todo').type(firstTodo).type('{enter}')
+    cy.get('.todo-list li')
       .first()
       .find('label').should('contain', firstTodo)
   })
