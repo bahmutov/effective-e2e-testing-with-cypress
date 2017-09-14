@@ -11,7 +11,7 @@
 // https://github.com/tastejs/todomvc/blob/master/tests/test.js
 // ***********************************************
 
-describe('TodoMVC - React', function(){
+describe('TodoMVC', function(){
 
   // setup these constants to match what TodoMVC does
   var TODO_ITEM_ONE   = 'buy some cheese'
@@ -35,7 +35,7 @@ describe('TodoMVC - React', function(){
 
     // these apps use classes like .new-todo
     // const url = 'http://todomvc.com/examples/angular2/'
-    // const url = 'http://todomvc.com/examples/vue/'
+    const url = 'http://todomvc.com/examples/vue/'
     // const url = 'http://todomvc.com/examples/react/'
     // const url = 'http://todomvc.com/examples/typescript-react/'
     // const url = 'http://todomvc.com/examples/aurelia/'
@@ -43,7 +43,7 @@ describe('TodoMVC - React', function(){
 
     // hmm single todo addition does not work,
     // but works with multiple items
-    const url = 'http://todomvc.com/examples/vanillajs/'
+    // const url = 'http://todomvc.com/examples/vanillajs/'
 
     // these apps use ids like #new-todo
     // const url = 'http://todomvc.com/examples/mithril/'
@@ -90,7 +90,7 @@ describe('TodoMVC - React', function(){
     // https://on.cypress.io/should
     // https://on.cypress.io/as
 
-    it.only('should allow me to add todo items', function(){
+    it('should allow me to add todo items', function(){
       // create 1st todo
       cy.get('.new-todo').type(TODO_ITEM_ONE).type('{enter}')
 
